@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div</title>
+    <link rel="stylesheet" href="./div_files/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="row1">welcome to besant</div>
+        <div class="row2">
+            <div class="row2-col1">home</div>
+            <div class="row2-col2">about</div>
+            <div class="row2-col3">courses</div>
+            <div class="row2-col4">gallery</div>
+            <div class="row2-col5">contact</div>
+     <div class="row3">
+        <div class="row3-col1">
+            <div class="row3-col1-row1">Web devlopment</div>
+            <div class="row3-col1-row2">Software texting</div>
+            <div class="row3-col1-row3">Cloud &amp; devops engineer</div>
+            <div class="row3-col1-row4">Data analytics</div>
+            <div class="row3-col1-row5">App designing</div>
+        </div>
+        <div class="row3-col2">
+           <img src="./div_files/Developer.webp" width="750" height="200px">
+        </div>
+     </div>
+     <div class="row4">our courses</div>
+     <div class="row5">
+        <div class="row5-col1"> <img src="./div_files/oo.jpeg" width="330" height="170"></div>
+        <div class="row5-col2"><img src="./div_files/local.png" width="330" height="170"></div>
+        <div class="row5-col3"><img src="./div_files/istockphoto-1257689121-612x612.jpg" width="330" height="170"> </div>
+     </div>
+     <div class="row6">
+        Home | about | cources | gallery | contact us
+     </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+       
+</div></body></html>
